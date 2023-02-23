@@ -5,6 +5,7 @@ import { PeliculasComponent } from './peliculas/peliculas.component';
 import { SeriesComponent } from './series/series.component';
 import { IngresarComponent } from './ingresar/ingresar.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -16,14 +17,14 @@ import { AppRoutingModule } from '../app-routing.module';
     IngresarComponent
   ],
   imports: [
-    CommonModule
-    AppRoutingModule
-  ]
-  exports [
-    InicioComponent
-    PeliculasComponent
-    SeriesComponent
-    IngresarComponent
+    CommonModule,
+    SharedModule
+  ],
+  exports: [
+    InicioComponent,
+    PeliculasComponent,
+    SeriesComponent,
+    IngresarComponent,
   ]
 })
 export class RoutesModule { }

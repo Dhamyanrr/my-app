@@ -12,12 +12,12 @@ import { AppRoutingModule } from '../app-routing.module';
     FooterComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
     AppRoutingModule
-  ]
-  exports [
-    HeaderComponent
-    FooterComponent
+  ],
+  exports: [
+    HeaderComponent,
+    FooterComponent,
   ]
 })
 export class LayoutModule { }

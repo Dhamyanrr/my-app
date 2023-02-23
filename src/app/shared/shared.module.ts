@@ -10,6 +10,10 @@ import { CardsComponent } from './cards/cards.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    CardsComponent
   ]
+
 })
 export class SharedModule { }
