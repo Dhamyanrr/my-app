@@ -1,0 +1,7 @@
+#cards {
+    display: flex; justify-content: center; align-content: center; text-align: center; margin: auto; padding: 16px;
+}
+#body {
+    background-image: radial-gradient(ellipse, rgb(128, 126, 193) 0%, rgb(0, 0, 7));
+    
+}
