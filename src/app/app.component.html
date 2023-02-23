@@ -1,0 +1,124 @@
+<!--  -->
+<header>
+    <nav class="navbar navbar-expand-lg menu">
+        <a href="/"><img src="./../assets/icon.svg" alt="" class="logo"></a>
+
+        <button class="navbar-toggler btn-menu" id="btn-menu" type="button" data-toggle="collapse"
+            data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><i
+                class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-end; color: #1f5dfd;">
+            <ul  class="navbar-nav ml-auto">
+                <li class="nav-item"><a style="color:#1f5dfd" class="nav-link" href="">Inicio</a></li>
+                <li class="nav-item"><a style="color:#1f5dfd" class="nav-link" href="">Peliculas</a></li>
+                <li class="nav-item"><a style="color:#1f5dfd" class="nav-link" href="">Series</a></li>
+                <li class="nav-item"><a style="color:#1f5dfd" class="nav-link" href="">Ingresar -></a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+<div class="container-fluid" id="body">
+    <div class="container-fluid">
+        <h1 style="color: rgb(211, 217, 236);">PelisUP!</h1>
+        <h5 style="color: rgb(211, 217, 236);" >Plataforma para ver peliculas y series</h5>
+        <div class="input-group">
+            <div class="form-outline">
+            </div>
+            <div class="container-fluid">
+                <input type="search" name="email" id="search-input" placeholder="busca peliculas y series">
+                <P></P>
+
+                <button type="button" class="btn btn-outline-primary">TODO</button>
+                <button type="button" class="btn btn-outline-primary">PELICULAS</button>
+                <button type="button" class="btn btn-outline-primary">SERIES</button>
+            </div>
+            <p></p>
+            <h5 style="color: rgb(211, 217, 236);">TODOS (120)</h5>
+
+
+            <div class="container-fluid" id="cards">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="start d-flex justify-content-center align-items-center qualification">
+                            <i class="far fa-star mr-1 "></i> 8.5
+                        </div>
+                        <img class="portada" src="../assets/1-black-widow.svg" alt="portada">
+                        <p style="color: aliceblue;" class="title-card link-regular">BLACK WIDOW</p>
+                    </div>
+
+
+                    <div class="col-md-3">
+                        <div class="start d-flex justify-content-center align-items-center qualification">
+                            <i class="far fa-star mr-1 "></i> 7.9
+                        </div>
+                        <img class="portada" src="./../assets/2-shang-chi.svg" alt="portada">
+                        <p style="color: aliceblue;" class="title-card link-regular">SHANG CHI</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="start d-flex justify-content-center align-items-center qualification">
+                            <i class="far fa-star mr-1 "></i> 8.4
+                        </div>
+                        <img class="portada" src="./../assets/3-loki.svg" alt="portada">
+                        <p style="color: aliceblue;" class="title-card link-regular">LOKI</p>
+                    </div>
+
+
+                    <div class="col-md-3">
+                        <div class="start d-flex justify-content-center align-items-center qualification">
+                            <i class="far fa-star mr-1 "></i> 8.3
+                        </div>
+                        <img class="portada" src="./../assets/4-how-i-met-your-mother.svg" alt="portada">
+                        <p style="color: aliceblue;" class="title-card link-regular">HOW I MET YOUR MOTHER</p>
+                    </div>
+
+
+                    <div class="col-md-3">
+                        <div class="start d-flex justify-content-center align-items-center qualification">
+                            <i class="far fa-star mr-1 "></i> 8.3
+                        </div>
+                        <img class="portada" src="./../assets/5-money-heist.svg" alt="portada">
+                        <p style="color: aliceblue;" class="title-card link-regular">MONEY HEIST</p>
+                    </div>
+
+
+                    <div class="col-md-3">
+                        <div class="start d-flex justify-content-center align-items-center qualification">
+                            <i class="far fa-star mr-1 "></i> 8.8
+                        </div>
+                        <img class="portada" src="./../assets/6-friends.svg" alt="portada">
+                        <p style="color: aliceblue;" class="title-card link-regular">FRIENDS</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="start d-flex justify-content-center align-items-center qualification">
+                            <i class="far fa-star mr-1 "></i> 8.1
+                        </div>
+                        <img class="portada" src="./../assets/7-the-big-bang-theory.svg" alt="portada">
+                        <p style="color: aliceblue;" class="title-card link-regular">THE BIG BANG THEORY</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="start d-flex justify-content-center align-items-center qualification">
+                            <i class="far fa-star mr-1 "></i> 7
+                        </div>
+                        <img class="portada" src="./../assets/8-two-and-a-half-men.svg" alt="portada">
+                        <p style="color: aliceblue;" class="title-card link-regular">TWO AND A HALF MEN</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer>
+            <H1 style="color: antiquewhite;">DAMIAN RODRIGUEZ</H1>
+        </footer>
+    </div>
+    <!--  -->
+
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    <app-cards></app-cards>
+    <app-footer></app-footer>
