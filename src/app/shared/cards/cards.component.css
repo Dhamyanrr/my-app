@@ -5,3 +5,20 @@
     background-image: radial-gradient(ellipse, rgb(128, 126, 193) 0%, rgb(0, 0, 7));
     
 }
+
+.card {
+background-color: darkblue; position: relative; 
+
+}
+
+.qualification {
+    background-color: rgba(0,0,0,0.60);
+    color: yellow;
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: fit-content;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    
+}
