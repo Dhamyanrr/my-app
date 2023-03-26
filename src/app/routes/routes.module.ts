@@ -5,7 +5,8 @@ import { PeliculasComponent } from './peliculas/peliculas.component';
 import { SeriesComponent } from './series/series.component';
 import { IngresarComponent } from './ingresar/ingresar.component';
 import { AppRoutingModule } from '../app-routing.module';
-
+import { FormsModule } from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -16,13 +17,17 @@ import { AppRoutingModule } from '../app-routing.module';
     IngresarComponent
   ],
   imports: [
-    CommonModule
-    AppRoutingModule
-  ]
-  exports [
-    InicioComponent
-    PeliculasComponent
-    SeriesComponent
+    CommonModule,
+    AppRoutingModule,
+    FormsModule,
+    SharedModule
+  
+    
+  ],
+  exports: [
+    InicioComponent,
+    PeliculasComponent,
+    SeriesComponent,
     IngresarComponent
   ]
 })
