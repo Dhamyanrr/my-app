@@ -7,25 +7,26 @@ import { SeriesComponent } from './routes/series/series.component';
 
 const routes: Routes = [
   {
-  path:"inicio",
-  component:InicioComponent
-},
-{
-  path:"peliculas",
-  component:PeliculasComponent
-},
-{
-  path:"series",
-  component:SeriesComponent
-},
-{
-  path:"ingresar",
-  component:IngresarComponent
-},
-{
-  path:"**",
-  redirectTo: "inicio",
-},
+    path:"inicio",
+    component:InicioComponent
+    
+  },
+  {
+    path:"peliculas",
+    component:PeliculasComponent
+  },
+  {
+    path:"series",
+    component:SeriesComponent
+  },
+  {
+    path:"ingresar",
+    component:IngresarComponent
+  },
+  {
+    path:"**",
+    redirectTo:"inicio"
+  }
 ];
 
 @NgModule({
