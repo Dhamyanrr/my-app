@@ -1,2 +1,37 @@
-<p>                <li class="nav-item"><a style="color:#1f5dfd" class="nav-link" href="">Ingresar -></a></li>
-</p>
+<div class="card login mx-auto d-flex">
+    
+    <div class="image">
+        <img class="Imagen" src="./assets/Saly-11.svg" alt="imagen">
+    </div>
+    <div class="container">
+        <form (ngSubmit)="ingresar()" [formGroup]="loginForm">
+            <h1 class="Inicio">Ingresar</h1>
+            <input 
+                class="form-control my-1" 
+                type="email" 
+                placeholder="Correo"
+                formControlName="correo"
+            >
+            <span class="form-text text-danger" *ngIf="campoEsValido('correo')">
+                Campo obligatorio
+            </span>
+            <input 
+                class="form-control my-1" 
+                type="password" 
+                placeholder="Contraseña"
+                formControlName="contrasena"
+            >
+            <span class="form-text text-danger" *ngIf="campoEsValido('contrasena')">
+                Campo obligatorio
+            </span>
+            <br>
+            <button  type="submit" class="btn-ingre btn-primary mt-3 mb-1">Ingresar</button>
+    
+            <hr>
+        </form>
+        <button class="btn-goo btn-primary mt-3 mb-1"  (click)="ingresarConGoogle()">  </button
+            > 
+        <hr>
+        <button class="btn-regis btn-primary mt-3 mb-1" (click)="register()"> No tienes cuenta? Registrate!</button>
+    </div>
+</div>
